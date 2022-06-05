@@ -26,3 +26,7 @@ Step 6 StartGame Class... The game will introduce the player to the game they ar
 The game will end when either player or computer runs out of ships.
 The game will give the player an option to play again once either side loses or exit if they don't.
 
+? = Fog of war
+X = miss
+H = hit a part of a ship
+S = the entire ship sunk
