@@ -17,7 +17,7 @@ Step 4. PlayerAndComputer class... This will have the player pick which side the
 (Once the basic game is set, I will figure out how the player can place their ships by saying something like A1 to J1.
 They will see the map as they place them like the board game)
 
-Step 5. Targeting class... This will let the player pick where they would like to choose to hit. When chosen if it misses
+Step 5. Targeting class... This will let the player pick where they would like to choose to hit. asking them the row and column. When chosen if it misses
 it will put that part in the array as -1, so it can't be picked again, On the map it will put an X as a miss.
 if hit, hit will take the place in the array. Will have to have something to say/show that a ship has been destroyed, S for Sunk.
 
