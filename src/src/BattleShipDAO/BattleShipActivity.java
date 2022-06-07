@@ -5,12 +5,10 @@ import BattleShipDAO.BattleShipModules.RulesOfTheGame;
 import BattleShipDAO.BattleShipModules.Targeting;
 import BattleShipDAO.BattleShipModules.WarShips;
 
-import java.io.IOException;
-import java.util.Objects;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-public class BattleShipDao {
+public class BattleShipActivity {
 
     private BattleShipBoard battleShipBoard;
 
@@ -18,10 +16,10 @@ public class BattleShipDao {
 
     private Targeting targeting;
 
-    public BattleShipDao() {
+    public BattleShipActivity() {
     }
 
-    public BattleShipDao(BattleShipBoard battleShipBoard, WarShips warShips, Targeting targeting) {
+    public BattleShipActivity(BattleShipBoard battleShipBoard, WarShips warShips, Targeting targeting) {
         this.battleShipBoard = battleShipBoard;
         this.warShips = warShips;
         this.targeting = targeting;
@@ -46,9 +44,8 @@ public class BattleShipDao {
                 // This case will show the player the rules of the game.
                 case 1:
                     rulesOfTheGame.Rules();
-                    System.out.println("\nWhen you are ready to go back to the main menu press enter.");
-                    String test = player.nextLine();
-                    player.nextLine();
+                    System.out.println("\nWhen you are ready to go back to the main menu any key.");
+                    UserInputHelper.getStringUserInput();
                     break;
                 case 2:
                     // This will start the game and wish the player good luck!
