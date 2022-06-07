@@ -28,7 +28,7 @@ public class BattleShipDao {
     }
 
     // Method that Introduces the player on the rules and game play.
-    public void introduceTheGame() throws InterruptedException{
+    public void introduceTheGame() throws InterruptedException {
         Scanner player = new Scanner(System.in);
         RulesOfTheGame rulesOfTheGame = new RulesOfTheGame();
         int playerChoice;
@@ -47,8 +47,8 @@ public class BattleShipDao {
                 case 1:
                     rulesOfTheGame.Rules();
                     System.out.println("\nWhen you are ready to go back to the main menu press enter.");
-                  String test =  player.nextLine();
-                  player.nextLine();
+                    String test = player.nextLine();
+                    player.nextLine();
                     break;
                 case 2:
                     // This will start the game and wish the player good luck!
@@ -69,7 +69,7 @@ public class BattleShipDao {
     }
 
     // Method that places the warShips // Randomly at this time, just can't be on top of each other ??? possible Nodes?.
-    public void warShipPlacement() {
+    public void placementOfWarships() {
 
     }
 
