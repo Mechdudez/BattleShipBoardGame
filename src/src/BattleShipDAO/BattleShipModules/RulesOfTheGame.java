@@ -8,11 +8,13 @@ public class RulesOfTheGame {
                 "\nsquares on the board.  The other player also tries to hit your ships by calling out coordinates. Neither you nor the other player " +
                 "\ncan see the other's board so you must try to guess where they are. Each board in the physical game has two grids:  the lower (horizontal) " +
                 "\nsection for the player's ships and the upper part (vertical during play) for recording the player's guesses.");
+
         System.out.println("\nEach player places the 5 ships somewhere on their board." +
                 "\nThe ships can only be placed vertically or horizontally. Diagonal placement is not allowed. No part of a ship may hang off the edge of the board.  Ships may not overlap each other. " +
                 "\nNo ships may be placed on another ship." +
                 "\nOnce the guessing begins, the players may not move the ships." +
                 "\nThe 5 ships are:  Carrier (occupies 5 spaces), Battleship (4), Cruiser (3), Submarine (3), and Destroyer (2). ");
+
         System.out.println("\nPlayer's take turns guessing by calling out the coordinates. The opponent responds with \"hit\" or \"miss\" " +
                 "\nas appropriate. Both players should mark their board with pegs:  red for hit, white for miss. For example, if you call out F6 and " +
                 "\nyour opponent does not have any ship located at F6, your opponent would respond with \"miss\". You record the miss F6 by placing a white" +

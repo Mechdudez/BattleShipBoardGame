@@ -28,7 +28,7 @@ public class BattleShipDao {
     }
 
     // Method that Introduces the player on the rules and game play.
-    public void introduceTheGame() throws InterruptedException, IOException {
+    public void introduceTheGame() throws InterruptedException{
         Scanner player = new Scanner(System.in);
         RulesOfTheGame rulesOfTheGame = new RulesOfTheGame();
         int playerChoice;
@@ -47,11 +47,12 @@ public class BattleShipDao {
                 case 1:
                     rulesOfTheGame.Rules();
                     System.out.println("\nWhen you are ready to go back to the main menu press enter.");
-                    player.nextLine();
+                  String test =  player.nextLine();
+                  player.nextLine();
                     break;
                 case 2:
                     // This will start the game and wish the player good luck!
-                    System.out.println("Good luck player! May your shoots be in your favor.");
+                    System.out.println("Good luck player! May your shots be in your favor.");
                     TimeUnit.SECONDS.sleep(5);
                     break;
                 // Let the player know they can not make this selection
