@@ -4,11 +4,11 @@ public class BattleShipBoard {
     // This map will need to be 10 by 10.
     private int columns = 10;
     private int rows = 10;
-    String[][] letters = new String[rows][columns];
+    String[] letters = new String[columns];
 
-    String[][] numbers = new String[rows][columns];
+    String[] numbers = new String[rows];
 
-    public BattleShipBoard(int columns, int rows, String[][] letters, String[][] numbers) {
+    public BattleShipBoard(int columns, int rows, String[] letters, String[] numbers) {
         this.columns = columns;
         this.rows = rows;
         this.letters = letters;
@@ -31,19 +31,19 @@ public class BattleShipBoard {
         this.rows = rows;
     }
 
-    public String[][] getLetters() {
+    public String[] getLetters() {
         return letters;
     }
 
-    public void setLetters(String[][] letters) {
+    public void setLetters(String[] letters) {
         this.letters = letters;
     }
 
-    public String[][] getNumbers() {
+    public String[] getNumbers() {
         return numbers;
     }
 
-    public void setNumbers(String[][] numbers) {
+    public void setNumbers(String[] numbers) {
         this.numbers = numbers;
     }
 }
