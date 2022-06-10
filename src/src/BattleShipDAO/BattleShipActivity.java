@@ -17,6 +17,7 @@ public class BattleShipActivity {
     private Targeting targeting;
 
     public BattleShipActivity() {
+
     }
 
     public BattleShipActivity(BattleShipBoard battleShipBoard, WarShips warShips, Targeting targeting) {
@@ -30,9 +31,23 @@ public class BattleShipActivity {
         Scanner player = new Scanner(System.in);
         RulesOfTheGame rulesOfTheGame = new RulesOfTheGame();
         int playerChoice;
+        String nameOfUser = null;
+        boolean userLeftItEmpty = true;
+
+        // The User will name themselves... if empty, will print out a message saying they will need to try again.
+        while (userLeftItEmpty) {
+            System.out.println("\nPlease type in a name");
+            nameOfUser = UserInputHelper.getStringUserInput();
+            if (nameOfUser.isEmpty()) {
+                System.out.println("Sorry it seems you didn't put anything in, Try again.");
+                TimeUnit.SECONDS.sleep(1);
+            } else {
+                userLeftItEmpty = false;
+            }
+        }
 
         do {
-            System.out.println("\nHello and welcome! This game is called Battleship and your goal is to destroy your enemy." +
+            System.out.println("\nHello " + nameOfUser + " and welcome! This game is called Battleship and your goal is to destroy your enemy." +
                     "\n --------------------------------------" +
                     "\n 1: Rules of the Game." +
                     "\n 2: Play the Game." +
@@ -61,8 +76,34 @@ public class BattleShipActivity {
 
 
     // Method that sets up the board
-    public void setUpTheBoard() {
-
+    public void setUpTheBoard(BattleShipBoard battleShipBoard) {
+        int rows = 0;
+        int columns = 0;
+        //       int[] numbers = new int[10];
+        //     int[] letters = new int[10];
+        // private String fogOfWar = "?"; // warships
+        for (rows = 0; rows < 10; rows++) { // represents the letters on the board
+            for (columns = 0; columns < 10; columns++) { // represents the numbers on the board.
+                battleShipBoard.getNumbers()[rows] = -1;
+                battleShipBoard.getLetters()[columns] = -1;
+                // -1 will be unknown, 0 is a miss and 1 is a hit.
+                // I will need to add a fogOfWar to each number in the number array;
+                // each letter should have 10 numbers in it.
+                // each one of hardcoded for 10, so it won't go out of bounds.
+                // After the iteration is done, print the grid out.
+            }
+        }
+        System.out.println("\t A \tB \tC \tD \tE \tF \tG \tH \tI \tJ");
+        System.out.println("\t1" +
+                "\n\t2" +
+                "\n\t3" +
+                "\n\t4" +
+                "\n\t5" +
+                "\n\t6" +
+                "\n\t7" +
+                "\n\t8" +
+                "\n\t9" +
+                "\n\t10");
     }
 
     // Method that places the warShips // Randomly at this time, just can't be on top of each other ??? possible Nodes?.

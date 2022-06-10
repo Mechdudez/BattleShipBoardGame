@@ -2,21 +2,21 @@ package BattleShipDAO.BattleShipModules;
 
 public class Targeting {
     // If the player misses the ship
-    private String miss = "X";
+    private String miss;
     // If the player hits the ship
-    private String hit = "H";
+    private String hit;
     // If the player hasn't hit or miss this spot
-    private String fogOfWar = "?";
+    private String fogOfWar;
     // If the warship has been sunk.
-    private String sunk = "S";
+    private String sunk;
 
     private String player = "";
 
-    public Targeting(String miss, String hit, String fogOfWar, String sunk, String player) {
-        this.miss = miss;
-        this.hit = hit;
-        this.fogOfWar = fogOfWar;
-        this.sunk = sunk;
+    public Targeting(String player) {
+        this.miss = "X";
+        this.hit = "H";
+        this.fogOfWar = "?";
+        this.sunk = "S";
         this.player = player;
     }
 

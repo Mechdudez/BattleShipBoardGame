@@ -1,49 +1,40 @@
 package BattleShipDAO.BattleShipModules;
 
+import java.util.Arrays;
+
 public class BattleShipBoard {
     // This map will need to be 10 by 10.
-    private int columns = 10;
-    private int rows = 10;
-    String[] letters = new String[columns];
 
-    String[] numbers = new String[rows];
+    int[] letters;
 
-    public BattleShipBoard(int columns, int rows, String[] letters, String[] numbers) {
-        this.columns = columns;
-        this.rows = rows;
-        this.letters = letters;
-        this.numbers = numbers;
+    int[] numbers;
+
+    public BattleShipBoard() {
+        this.letters = new int[10];
+        this.numbers = new int [10];
     }
 
-    public int getColumns() {
-        return columns;
-    }
-
-    public void setColumns(int columns) {
-        this.columns = columns;
-    }
-
-    public int getRows() {
-        return rows;
-    }
-
-    public void setRows(int rows) {
-        this.rows = rows;
-    }
-
-    public String[] getLetters() {
+    public int[] getLetters() {
         return letters;
     }
 
-    public void setLetters(String[] letters) {
+    public void setLetters(int[] letters) {
         this.letters = letters;
     }
 
-    public String[] getNumbers() {
+    public int[] getNumbers() {
         return numbers;
     }
 
-    public void setNumbers(String[] numbers) {
+    public void setNumbers(int[] numbers) {
         this.numbers = numbers;
+    }
+
+    @Override
+    public String toString() {
+        return "BattleShipBoard{" +
+                "letters=" + Arrays.toString(letters) +
+                ", numbers=" + Arrays.toString(numbers) +
+                '}';
     }
 }
