@@ -1,4 +1,4 @@
-package BattleShipDAO.BattleShipModules;
+package BattleShipActivity.BattleShipModules;
 
 public class Targeting {
     // If the player misses the ship

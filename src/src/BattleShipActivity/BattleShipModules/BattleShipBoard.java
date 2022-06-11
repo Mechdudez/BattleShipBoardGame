@@ -1,4 +1,4 @@
-package BattleShipDAO.BattleShipModules;
+package BattleShipActivity.BattleShipModules;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package BattleShipDAO;
+package BattleShipActivity.BattleShipActivityHelpers;
 
 import java.util.Scanner;
 
