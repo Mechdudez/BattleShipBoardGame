@@ -52,7 +52,7 @@ public class BattleShipActivity {
         SetUpTheBoardHelper setUpTheBoardHelper = new SetUpTheBoardHelper();
         System.out.println("\nType out where you would like to hit.\n");
 
-        System.out.println("  Player One                                       Player Two");
+        System.out.println("  Player One                                       Player Two"); // TODO Getter to get the names of players
         setUpTheBoardHelper.setUpTheBoard();
     }
 
