@@ -15,37 +15,7 @@ public class SetUpTheBoardHelper {
         String makeTheFirstRow = String.join(blankSpace, firstRow);
 
         System.out.println(makeTheFirstRow);
-
-        // Player one side of the board
-//        firstRow.add("");
-//        firstRow.add("A");
-//        firstRow.add("B");
-//        firstRow.add("C");
-//        firstRow.add("D");
-//        firstRow.add("E");
-//        firstRow.add("F");
-//        firstRow.add("G");
-//        firstRow.add("H");
-//        firstRow.add("I");
-//        firstRow.add("J");
-
-//        firstRow.add("           ");
-//         Player two side of the board
-//        firstRow.add("A");
-//        firstRow.add("B");
-//        firstRow.add("C");
-//        firstRow.add("D");
-//        firstRow.add("E");
-//       firstRow.add("F");
-//        firstRow.add("G");
-//        firstRow.add("H");
-//        firstRow.add("I");
-//        firstRow.add("J");
-//        firstRow.remove(",");
-
-
     }
-
     public void getLeftSideAndRightSide() {
         System.out.print("");
         for(int i = 0; i < 10; i++){
@@ -56,16 +26,25 @@ public class SetUpTheBoardHelper {
             System.out.print("  |");
         }
     }
-
-
     public void getUpAndDown() {
         for(int i = 0; i < 11; i++){
             System.out.print("_");
         }
     }
+    public void getNumbers(){
+        for(int i = 0; i < 10; i++){
+            System.out.println(i);
+        }
+
+//        for(int j = 0; j < 10; j++){
+//            System.out.println("                                                  " + j);
+//        }
+    }
     public void setUpTheBoard(){
         getFirstRow();
+        getNumbers();
         for (int i = 0; i < 10; i++){
+
             getLeftSideAndRightSide();
             System.out.println("");
 
