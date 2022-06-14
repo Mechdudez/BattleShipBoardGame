@@ -16,41 +16,36 @@ public class SetUpTheBoardHelper {
 
         System.out.println(makeTheFirstRow);
     }
-    public void getPlayerTwoMap(){
-        for (int j = 0; j < 11; j ++){
+
+    public void getPlayerTwoMap() {
+
+        for (int j = 0; j < 11; j++) {
+
             System.out.print(" |");
         }
     }
+
     public void getPlayerOneMap() {
+        for (int i = 0; i < 11; i++) {
 
-        for(int i = 0; i < 25; i++){
-            if(i <= 10){
-                System.out.print(" |");
-
-                }
-                if(i == 11) {
-                    System.out.print("                   ");
-                }
-              
-                if(i > 13){
-                    System.out.print(" |");
-                }
-
-
+            System.out.print(" |");
 
         }
 //        System.out.print("                   ");
+//
 //        for (int j = 0; j < 11; j ++){
 //            System.out.print(" |");
 //        }
 
     }
+
     public void getUpAndDown() {
-        for(int i = 0; i < 11; i++){
+        for (int i = 0; i < 11; i++) {
             System.out.print("   _");
         }
     }
-    public void getNumbers(){
+
+    public void getNumbers() {
 
 //        for(int i = 0; i < 10; i++){
 //            System.out.println(i);
@@ -61,19 +56,26 @@ public class SetUpTheBoardHelper {
 //        }
 
     }
-    public void setUpTheBoard(){
+
+    public void setUpTheBoard() {
 
         getFirstRow();
-        for (int i = 0; i < 10; i++){
-          //  getUpAndDown();
+        for (int i = 0; i < 10; i++) {
+            //  getUpAndDown();
 
             System.out.print(i);
-            getPlayerOneMap();
+            for (int j = 0; j < 11; j++) {
+
+                System.out.print(" |");
+
+
+            }
+            
             System.out.print("                   ");
-            System.out.println();
+            System.out.println(i);
 
 
-       }
+        }
 
     }
 
